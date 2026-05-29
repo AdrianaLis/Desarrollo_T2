@@ -10,6 +10,7 @@ for i in range(n):
 print("\n" + "="*8, "Matriz Generada de:", n, "elementos", "="*8)
 for fila in matriz:
     print(" ".join(f"{num:3d}" for num in fila))
+
 def contar_elementoslista(lista):
     if len(lista) == 1:
         numero = lista[0]
@@ -25,8 +26,7 @@ nueva_lista = []
 for fila in matriz:
     nueva_lista.extend(fila)
 total = contar_elementoslista(nueva_lista)
+
 print("\n" + "-"*50)
 print(f"Cantidad de múltiplos de 5 o 7 encontrados: {total}")
 print("-"*50)
-
-
